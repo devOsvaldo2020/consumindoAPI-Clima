@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {    
+    background-image: radial-gradient(circle, #9A2EFE 0%, #8129CF 28%, #8129CF 32%, #4C0B5F 100%);;
+}
+
+img {
+    max-width: 100%;
+    width: 165px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1040px;
+}
+
+h1 {
+    color: #f2f7ff;
+    margin: 20px 0;
+}
+
+.busca {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding: 20px;
+    gap: 10px;
+}
+.busca #clima {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #09090A;
+    color: #f2f7ff;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.busca button:hover {
+    background-color: #444;
+}
+.home {
+    display: flex;
+    justify-content: center;
+}
+.resultado {
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.titulo {
+    width: 100%;
+    color: #f2f7ff;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo {
+    color: #f2f7ff;
+    font-size: 60px;
+    font-weight: normal;
+}
+.ventoInfo,
+.windDeg,
+.humidity, 
+.pressure,
+.Deg {
+    color: #f2f7ff;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.temp__info{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     justify-content: center;
+}
+#dias,
+.tempDesc{
+    color: #f2f7ff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vento {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo::before {
+    content: '';
+    background-image: url('../img/wind-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.windDeg::before {
+    content: '';
+    background-image: url('../img/wind.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.humidity::before {
+    content: '';
+    background-image: url('../img/humidity.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.pressure::before {
+    content: '';
+    background-image: url('../img/pressure.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f2f7ff;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #f2f7ff;
+    transform-origin: left;
+}
+.icon {
+    display: none;
+}
+#rays {
+    transform-origin: center;
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .vento {
+      align-items: center;
+    }
+    .info {
+      padding: 20px;
+    }
+    .home {
+        flex-wrap: wrap;
+    }
+  }
