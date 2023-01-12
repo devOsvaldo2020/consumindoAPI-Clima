@@ -5,3 +5,9 @@
 - Melhorando o código de aparência.
 
 [clica aqui]{}, para ver o resultado.
+
+
+url ("../tela.png")
+
+
+link url('assets/img/tela.png');
