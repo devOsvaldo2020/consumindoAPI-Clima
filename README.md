@@ -4,10 +4,10 @@
 
 - Melhorando o código de aparência.
 
-[clica aqui]{}, para ver o resultado.
+[clica aqui](https://devosvaldo2020.github.io/consumindoAPI-Clima/, para ver o resultado.
 
 
-url ("../tela.png")
+* // url ("../tela.png")
 
 
-link url('assets/img/tela.png');
+// link url('assets/img/tela.png');
